@@ -1,0 +1,12 @@
+{% extends 'bootstrap3/bootstrap3.html' %}
+
+{% block bootstrap3_title %}{% block title %}{{ project_name }}{% endblock %}{% endblock %}
+{% load url from future %}
+
+{% load bootstrap3 %}
+
+{% block bootstrap3_content %}
+    {% bootstrap_messages %}
+
+    {% block content %}{% endblock %}
+{% endblock %}
